@@ -1,0 +1,18 @@
+6.-Ingseresar a la ruta  /var/www/ para crear un directorio donde se alamanecara el sistema web
+7.- Comando de creacion mkdir nombre_carpeta
+8.- Otorgar los permisos, por ejemplo chmod -R 777 nombre_carpeta
+9.- Ingresar a la ruta  /etc/apache2/sites-avalible/ 
+10.- Crear un archivo con el nombre del virtual host (dominio) nombre_host.config (la extension de ser .config). Comando: nano nombre_host.config
+11.- En el archivo se debe agregar los datos del host virtual
+    <VirtualHost *:80> //indica que se puede ingresar cualquier direccion IP y el puerto por default es el 80 
+        ServerAdmin webmaster@localhost //administrador del dominio y que dominio es
+        ServerName 'nombre_host' //se asigna el nombre del dominio o host
+        DocumentRoot /var/www/ nombre_carpeta //carpeta a la que se hara refencia, debe ser la misma creada en pasos anteriores
+    </VirtualHost>//cierre de bloque 
+12.- Se guardan los cambios en el archivo y se cierra.
+13.- Se habilita la configuracion creada con el comando: a2ensite nombre_host.conf (se debe escribir el nombre del archivo creado con extension).
+14.- Se da de alta el nuevo host editando el archivo hosts ubicado en la carptea etc, comando : nano /etc/hosts
+15.- Añadir el dominio ingresando la IP  a la que se vincula, seguido del nombre de dominio (host) se parado por espacios: 
+   127.0.0.0    nombre_host
+15.- Se guardan cambios y se reinicia el servidor apache:
+    service apache2 restart

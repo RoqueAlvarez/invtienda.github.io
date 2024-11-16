@@ -1,0 +1,100 @@
+body {
+    background-color: #001f3f; 
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+
+button, .btn, .btn-primary, .btn-link, .dt-button {
+    background-color: #00a2e8 !important;
+    color: white !important;
+    border: none !important;
+    padding: 10px 20px !important;
+    font-weight: bold !important; 
+    border-radius: 5px !important;
+    cursor: pointer;
+}
+
+button:hover, .btn:hover, .btn-primary:hover, .dt-button:hover {
+    background-color: #001f3f !important; 
+    color: white !important; 
+}
+
+
+.btn-link {
+    text-decoration: none;
+    color: #00a2e8 !important; 
+    font-weight: bold !important;
+}
+
+
+table, .table, .dataTable {
+    
+    background-color: #181d29 !important; 
+    color: white !important; 
+    border-collapse: collapse; 
+}
+
+
+.table th, .table td, .dataTable th, .dataTable td {
+    padding: 12px 15px !important; 
+    text-align: left !important; 
+    border: 1px solid #00a2e8 !important; 
+}
+
+.table th, .dataTable th {
+    background-color: #00a2e8 !important; 
+    color: white !important; 
+}
+
+.dataTable tr.selected {
+    background-color: #00a2e8 !important; 
+    color: white !important; 
+}
+
+
+.table tr:nth-child(even), .dataTable tr:nth-child(even) {
+    background-color: #333c56 !important; 
+}
+
+.table tr:nth-child(odd), .dataTable tr:nth-child(odd) {
+    background-color: #333c56 !important;
+}
+
+
+.card, .bg-card {
+    background-color: #181d29 !important;  
+    border: 2px solid #00a2e8 !important; 
+    color: white !important;
+    border-radius: 10px !important;
+    padding: 20px !important;
+}
+
+.card-header, .bg-card .card-header {
+    background-color: #00a2e8 !important;
+    color: white !important;
+    border-bottom: 2px solid #00a2e8 !important;
+}
+
+.card-body, .bg-card .card-body {
+    background-color: #181d29 !important; 
+    color: white !important; 
+}
+
+.card-footer, .bg-card .card-footer {
+    background-color: #00a2e8 !important; 
+    color: white !important; 
+}
+
+
+.card a, .bg-card a {
+    color: #00a2e8 !important; 
+    font-weight: bold !important;
+}
+
+.fondo {
+    background-color: #181d29 !important; 
+    border-radius: 15px !important;
+    border: 2px solid #00a2e8 !important; 
+}
